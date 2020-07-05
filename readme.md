@@ -19,6 +19,8 @@
 * npm i -D eslint-plugin-react
 * npm i -D webpack webpack-cli webpack-dev-server
 * npm i -D clean-webpack-plugin
+* npm i -D node-sass sass-loader css-loader style-loader ts-loader
+* npm i -D identity-obj-proxy
 
 
 ### Clean Architecture SOLID

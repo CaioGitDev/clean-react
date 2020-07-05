@@ -14,6 +14,8 @@
 * npm i -D faker @types/faker
 * npm i axios
 * npm i -D @types/axios
+* npm i react react-dom
+* npm i -D @types/react @types/react-dom
 
 
 ### Clean Architecture SOLID

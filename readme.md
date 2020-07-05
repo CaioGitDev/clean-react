@@ -16,6 +16,7 @@
 * npm i -D @types/axios
 * npm i react react-dom
 * npm i -D @types/react @types/react-dom
+* npm i -D webpack webpack-cli webpack-dev-server
 
 
 ### Clean Architecture SOLID

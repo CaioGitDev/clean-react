@@ -12,6 +12,8 @@
 * npm i -D lint-staged husky
 * npm i -D jest @types/jest ts-jest
 * npm i -D faker @types/faker
+* npm i axios
+* npm i -D @types/axios
 
 
 ### Clean Architecture SOLID

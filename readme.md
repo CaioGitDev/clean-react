@@ -25,3 +25,6 @@
 * Presentation
 * Validation
 * Main
+
+### Tips
+* ``SUT``: System under test 

@@ -37,3 +37,4 @@
 
 ### Tips
 * ``SUT``: System under test 
+* git reset {hash commit}

@@ -21,6 +21,8 @@
 * npm i -D clean-webpack-plugin
 * npm i -D node-sass sass-loader css-loader style-loader ts-loader
 * npm i -D identity-obj-proxy
+* npm i react-router-dom
+* npm i @types/react-router-dom -D
 
 
 ### Clean Architecture SOLID

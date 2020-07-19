@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, RenderResult, fireEvent, cleanup } from '@testing-library/react'
 import Login from './login'
-import { ValidationStub } from '../../../presentation/test'
+import { ValidationStub } from '@/presentation/test'
 import * as Faker from 'faker'
 
 type SutTypes = {
@@ -86,5 +86,18 @@ describe('Login Component', () => {
 
     const submitButton = sut.getByTestId('submit') as HTMLButtonElement
     expect(submitButton.disabled).toBe(false)
+  })
+
+  test('should show spinner on submit click event', () => {
+    const { sut } = makeSut()
+    const emailInput = sut.getByTestId('email')
+    fireEvent.input(emailInput, { target: { value: Faker.internet.email } })
+    const passwordInput = sut.getByTestId('password')
+    fireEvent.input(passwordInput, { target: { value: Faker.internet.password() } })
+
+    const submitButton = sut.getByTestId('submit')
+    fireEvent.click(submitButton)
+    const spinner = sut.queryAllByTestId('spinner')
+    expect(spinner).toBeTruthy()
   })
 })

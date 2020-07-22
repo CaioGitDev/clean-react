@@ -19,8 +19,8 @@ const Login: React.FC<Props> = ({ validation }: Props) => {
   })
 
   useEffect(() => {
-    setState((oldState) => ({
-      ...oldState,
+    setState((state) => ({
+      ...state,
       emailError: validation.validate('email', state.email),
       passwordError: validation.validate('password', state.password)
     }))
